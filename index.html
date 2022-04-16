@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/main.css">
-
     <title>NETFLIX</title>
 
-    <!-- para usar os ícones do fontawesome.com -->
-    <script src="https://kit.fontawesome.com/6cd6906110.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- arquivos owl para o caroucel -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
 
 </head>
 <body>
@@ -35,18 +39,15 @@
             <div class="container">
 
                 <h3 class="titulo">PEAKY BLINDERS</h3>
-                <p class="descricao">Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército <br>
-                    britânico durante a Primeira Guerra Mundial. Os Peaky Blinders, a gangue na qual <br>
-                    Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby <br>
-                    se estendem para além de Birmingham, ele planeja construir o império de negócios <br>
-                    que criou e impedir qualquer um que atrapalhar.</p>
+                <p class="descricao">Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Os Peaky Blinders, a gangue na qual 
+                    Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby se estendem para além de Birmingham, ele planeja construir o império de negócios que criou e impedir qualquer um que atrapalhar.</p>
                 
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="verTrailer()">
                         <i class="fa-solid fa-play"></i>   <!-- ícone tirado do site: https://fontawesome.com/search?q=play&m=free&s=solid%2Cbrands -->
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="verInformacao()">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -55,6 +56,39 @@
             </div>           
         </div>
     </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> <img class="box-filmes" src="img/min01.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min02.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min03.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min04.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min05.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min06.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min07.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min08.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min09.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min10.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min11.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min12.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min13.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min14.jpg" alt=""> </div>
+            <div class="item"> <img class="box-filmes" src="img/min15.jpg" alt=""> </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><small>Desenvolvido por Ticiano Filho</small></p>
+    </footer>
+
+    <!-- para usar os ícones do fontawesome.com -->
+    <script src="https://kit.fontawesome.com/6cd6906110.js" crossorigin="anonymous"></script>  
+
+    <!-- arquivos owl para o caroucel-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/myJs.js"></script>
 
 </body>
 </html>
